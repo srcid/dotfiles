@@ -1,0 +1,8 @@
+gss ; git status
+gc  ; git commit -v
+gcm ; git commit -v -m
+ga  ; git add
+gd  ; git diff
+gp  ; git push -u
+gf  ; git fetch
+gb  ; git branch
