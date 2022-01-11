@@ -11,6 +11,13 @@ sudo ./aws/install
 rm -rf aws/
 rm awscliv2.zip
 
+# Ativando auto-completion para aws cli em Bash
+complete -C '/usr/local/bin/aws_completer' aws
+
+# Ativando auto-completion para aws cli em Zsh
+echo -e "autoload bashcompinit && bashcompinit\nautoload -Uz compinit && compinit" >> .zshrc
+complete -C '/usr/local/bin/aws_completer' aws
+
 # Instalando github cli
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
