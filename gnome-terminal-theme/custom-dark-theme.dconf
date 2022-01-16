@@ -1,9 +1,6 @@
-[/]
-background-color='rgb(43,43,43)'
-background-transparency-percent=16
-font='Fira Code Medium 20'
-foreground-color='rgb(218,218,218)'
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(26,26,26)'
+font='Fira Code 20'
+foreground-color='rgb(170,170,170)'
 use-system-font=false
 use-theme-colors=false
-use-theme-transparency=false
-use-transparent-background=false
