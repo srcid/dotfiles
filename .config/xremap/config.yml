@@ -1,0 +1,6 @@
+modmap:
+  - name: Laptop keyboard remapping
+    device:
+      only: "AT Translated Set 2 keyboard"
+    remap:
+      RIGHTALT: RIGHTCTRL
