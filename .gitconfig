@@ -1,0 +1,26 @@
+[user]
+	name = Alcides Ribeiro
+	email = alcidesribeirosampaioneto@gmail.com
+	signingkey = 71B8814397E69175
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[init]
+	defaultBranch = master
+[core]
+	pager = less -F -X -S
+[alias]
+	co = checkout
+	br = branch
+	cm = commit
+	s = status --short
+	pm = push -u origin master
+	pu = push -u
+	a = add
+	po = push -u origin
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
