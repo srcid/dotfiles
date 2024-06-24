@@ -7,9 +7,9 @@ esac
 if [ -f ~/.paths ]; then
 	while read -r p; do
 	    eval p="$p"
-		if [ -d "$p" ] && ! [[ "$PATH" =~ "$p" ]]; then
-            PATH="$p:$PATH"
-	    fi			
+	if [ -d "$p" ] && ! [[ "$PATH" =~ "$p" ]]; then
+        PATH="$p:$PATH"
+	fi
 	done < ~/.paths
 fi
 
@@ -26,7 +26,6 @@ shopt -s globstar     # enable the pattern "**" used in a pathname
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
-
 
 PROMPT_COMMAND='GIT_PS1_SHOWDIRTYSTATE=1 GIT_PS1_SHOWUPSTREAM=1 GIT_PS1_SHOWCOLORHINTS=1 __git_ps1 "\[\e[91m\]\u\[\e[0m\]@\[\e[92m\]\H\[\e[0m\] \[\e[94m\]\W\[\e[0m\]" " \$ "'
 
