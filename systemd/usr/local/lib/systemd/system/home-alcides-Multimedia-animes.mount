@@ -1,0 +1,13 @@
+[Unit]
+Description=Multimedia animes mount
+Requires=dev-disk-by\x2duuid-2dad8646\x2d5dff\x2d46f9\x2d807b\x2d8c7a3cf1b7be.device
+After=dev-disk-by\x2duuid-2dad8646\x2d5dff\x2d46f9\x2d807b\x2d8c7a3cf1b7be.device
+
+[Mount]
+What=/dev/disk/by-uuid/2dad8646-5dff-46f9-807b-8c7a3cf1b7be
+Where=/home/alcides/Multimedia/animes
+Type=btrfs
+Options=subvol=@animes,defaults
+
+[Install]
+RequiredBy=dev-disk-by\x2duuid-2dad8646\x2d5dff\x2d46f9\x2d807b\x2d8c7a3cf1b7be.device
