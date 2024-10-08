@@ -1,0 +1,8 @@
+[Unit]
+Description=Xremap tool daemon
+
+[Service]
+ExecStart=/home/alcides/.cargo/bin/xremap /home/alcides/.config/xremap/config.yml
+
+[Install]
+WantedBy=default.target
