@@ -2,7 +2,7 @@
 Description=Xremap tool daemon
 
 [Service]
-ExecStart=/home/alcides/.cargo/bin/xremap /home/alcides/.config/xremap/config.yml
+ExecStart=/home/alcides/.local/cargo/bin/xremap /home/alcides/.config/xremap/config.yml
 
 [Install]
 WantedBy=default.target
