@@ -7,7 +7,7 @@ fi
 
 # User specific environment and startup programs
 if [ -d ~/.bash_profile.d ]; then
-    for rc in ~/.bash_profile.d; do
-        . rc
+    for rc in ~/.bash_profile.d/*; do
+        . $rc
     done
 fi
