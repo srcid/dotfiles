@@ -1,7 +1,7 @@
 [user]
 	name = Alcides Ribeiro
 	email = alcidesribeirosampaioneto@gmail.com
-	signingkey = 71B8814397E69175
+	signingkey = alcidesribeirosampaioneto@gmail.com
 [commit]
 	gpgsign = true
 [tag]
