@@ -19,6 +19,7 @@
 	pu = push -u
 	a = add
 	po = push -u origin
+	ss = status
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
