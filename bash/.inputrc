@@ -8,6 +8,8 @@ set completion-ignore-case on
 ## Menu complete
 TAB: menu-complete
 "\e[Z": menu-complete-backward
-
+set menu-complete-display-prefix on
 set show-all-if-unmodified on
 set show-all-if-ambiguous on
+set colored-completion-prefix on
+set colored-stats on
