@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+url=$1
+
+if [[ ! $url = http?(s)://* ]]; then
+    url=https://youtu.be/$url
+fi
+
 yt-dlp \
     -v \
     -x \
@@ -7,4 +13,4 @@ yt-dlp \
     --audio-quality 0 \
     --embed-metadata \
     --no-playlist \
-    -o '~/Music/%(artists.0)s/%(track)s.%(ext)s' $1
+    -o '~/Music/%(artists.0)s/%(track)s.%(ext)s' $url
