@@ -1,0 +1,14 @@
+define log(b,x) {
+    return l(x)/l(b);
+}
+
+define pow(a, b) {
+    if (scale(b) == 0) {
+        return a^b;
+    }
+    return e(b*l(a));
+}
+
+pi = 4*a(1);
+e = e(1);
+phi = (1+sqrt(5))/2;
