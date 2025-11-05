@@ -5,4 +5,4 @@ export VISUAL=$EDITOR
 # customizing prompt
 PROMPT_DIRECTORY='\W'
 PROMPT_SEPARATOR=' '
-PROMPT_END='$(__git_ps1 " (%s)") '
+PROMPT_GIT_BRANCH='$(__git_ps1 "(%s) ")'
