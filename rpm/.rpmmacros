@@ -1,4 +1,3 @@
-%packager Alcides Ribeiro <alcides.dev.br@gmail.com>
 
 %_topdir %(echo $HOME)/rpmbuild
 
@@ -6,3 +5,5 @@
     [ "%{buildarch}" = "noarch" ] || QA_CHECK_RPATHS=1 ; \
     case "${QA_CHECK_RPATHS:-}" in [1yY]*) /usr/lib/rpm/check-rpaths ;; esac \
     /usr/lib/rpm/check-buildroot
+
+%packager Alcides Ribeiro <me@alcides.dev.br>
