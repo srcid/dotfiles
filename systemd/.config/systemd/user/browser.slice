@@ -1,6 +1,0 @@
-[Unit]
-Description=Custom slice for limit resources usage by browsers
-
-[Slice]
-MemoryMax=1500M
-MemorySwapMax=500M
