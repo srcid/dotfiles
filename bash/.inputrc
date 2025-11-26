@@ -13,3 +13,6 @@ set show-all-if-unmodified on
 set show-all-if-ambiguous on
 set colored-completion-prefix on
 set colored-stats on
+
+# Shift + Backspace for delete word backward
+"\C-H": shell-backward-kill-word
