@@ -1,5 +1,9 @@
+# Remove entries of file size limit from history
 export HISTSIZE=-1
 export HISTFILESIZE=-1
+
+# Sync history after each command, prevent hisoty overwrite
+export PROMPT_COMMAND='history -a; history -n'
 
 export EDITOR="nvim"
 export SUDO_EDITOR=$EDITOR
