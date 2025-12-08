@@ -18,3 +18,7 @@ set colored-stats on
 
 # ctrl + Backspace for delete word backward
 "\C-H": backward-kill-word
+
+# disable more pagger on long completions
+set completion-query-items -1
+set page-completions off
