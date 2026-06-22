@@ -1,8 +1,8 @@
 ## arrow up
-"\e[A":history-search-backward
+"\e[A": history-search-backward
 
 ## arrow down
-"\e[B":history-search-forward
+"\e[B": history-search-forward
 
 # case insensitive search
 set completion-ignore-case on
@@ -19,6 +19,5 @@ set colored-stats on
 # ctrl + Backspace for delete word backward
 "\C-H": backward-kill-word
 
-# disable more pagger on long completions
-set completion-query-items -1
+# disable more pagger on long completions, just print it out
 set page-completions off
