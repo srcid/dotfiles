@@ -1,3 +1,5 @@
+! [ -f /etc/profile.d/bash-color-prompt.sh ] && return 0
+
 # customizing prompt
 prompt_dir_color '34'
 prompt_git_color '37'
