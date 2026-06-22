@@ -5,7 +5,7 @@ export HISTFILESIZE=-1
 # Sync history after each command, prevent hisoty overwrite
 export PROMPT_COMMAND='history -a; history -n'
 
-export EDITOR="nvim"
+export EDITOR="micro"
 export SUDO_EDITOR=$EDITOR
 export VISUAL=$EDITOR
 
