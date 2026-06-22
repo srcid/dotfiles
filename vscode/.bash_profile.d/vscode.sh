@@ -1,2 +1,2 @@
-export VSCODE_APPDATA="$HOME/.local/vscode/data"
-export VSCODE_EXTENSIONS="$HOME/.local/vscode/extensions"
+export VSCODE_APPDATA="$HOME/.local/opt/vscode"
+export VSCODE_EXTENSIONS="$HOME/.local/opt/vscode/extensions"
