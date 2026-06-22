@@ -21,3 +21,7 @@ set colored-stats on
 
 # disable more pagger on long completions, just print it out
 set page-completions off
+
+# Sets the threshold for how many items will trigger a "show all matches?" confirmation prompt
+# -1 show all matches without asking
+# set completion-query-items -1
