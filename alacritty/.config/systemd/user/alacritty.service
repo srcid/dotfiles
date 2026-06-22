@@ -1,0 +1,15 @@
+[Unit]
+Description="Alacritty terminal emulator daemon"
+Before=default.target
+
+[Service]
+RuntimeDirectory=alacritty
+RuntimeDirectoryMode=755
+Type=exec
+ExecStart=/usr/bin/alacritty --daemon --socket %t/alacritty/alacritty.sock
+ExecStartPost=/usr/bin/systemctl --user set-environment ALACRITTY_SOCKET=%t/alacritty/alacritty.sock
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
