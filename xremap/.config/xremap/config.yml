@@ -4,3 +4,8 @@ modmap:
       only: "AT Translated Set 2 keyboard"
     remap:
       RIGHTALT: RIGHTCTRL
+
+keymap:
+  - name: Open context menu
+    remap:
+      RIGHTSHIFT-CAPSLOCK: COMPOSE
