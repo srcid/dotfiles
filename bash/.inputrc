@@ -19,6 +19,9 @@ set colored-stats on
 # ctrl + Backspace for delete word backward
 "\C-H": backward-kill-word
 
+# Alt + d for delete whole word from begining
+"\ed": kill-word
+
 # disable more pagger on long completions, just print it out
 set page-completions off
 
