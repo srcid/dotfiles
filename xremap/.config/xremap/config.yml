@@ -4,8 +4,18 @@ modmap:
       only: "AT Translated Set 2 keyboard"
     remap:
       RIGHTALT: RIGHTCTRL
+  - name: Remap song control keys to audio volume
+    device:
+      only: "AT Translated Set 2 keyboard"
+    remap:
+      PREVIOUSSONG: VOLUMEDOWN
+      NEXTSONG: VOLUMEUP
+      STOPCD: MUTE
 
 keymap:
   - name: Open context menu
     remap:
       RIGHTSHIFT-CAPSLOCK: COMPOSE
+  - name: Reverse backspace with shift pressed
+    remap:
+      SHIFT-BACKSPACE: DELETE
