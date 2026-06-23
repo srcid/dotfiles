@@ -25,3 +25,7 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[tar "tar.zst"]
+	command = zstd --format=zstd -T0 -19 -c -f
+[tar "tzst"]
+	command = zstd --format=zstd -T0 -19 -c -f
