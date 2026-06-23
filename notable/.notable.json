@@ -10,8 +10,8 @@
 		}
 	},
 	"sorting": {
-		"by": "title",
-		"type": "ascending"
+		"by": "date_created",
+		"type": "descending"
 	},
 	"theme": "dark",
 	"tutorial": false,
