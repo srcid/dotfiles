@@ -48,3 +48,10 @@ __quote_word() {
 }
 
 bind -x "\"\C-xq\": __quote_word"
+
+reload() {
+  exec bash
+}
+
+bind -r '\C-r'
+bind -x '"\C-r":reload'
