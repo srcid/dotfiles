@@ -30,3 +30,23 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
+
+# Sync history after each command, prevent hisoty overwrite
+__hist_sync() {
+	history -a
+	history -n
+}
+
+PROMPT_COMMAND="__hist_sync${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
+
+__prompt_fix_newline() {
+    local pos
+
+    exec </dev/tty >/dev/tty
+
+    IFS='[;' read -sdR -p $'\e[6n' _ _ pos
+
+    (( pos != 1 )) && printf '\e[7m \e[0m\n'
+}
+
+PROMPT_COMMAND="__prompt_fix_newline${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
